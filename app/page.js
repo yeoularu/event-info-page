@@ -112,8 +112,8 @@ export default function Home() {
                   The 32nd Integrated Operating Scenarios TG Meeting
                 </h1>
                 <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-                  The 32nd ITPA Integrated Operation Scenario (IOS) Topical
-                  Group is held at Seoul National University.
+                  The 32nd ITPA Integrated Operation Scenario Topical Group is
+                  held at Seoul National University.
                 </h2>
               </div>
               <div className="grid gap-4">
@@ -229,8 +229,8 @@ export default function Home() {
                   Venue
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Seoul National University Global Engineering Education Center,
-                  Building 38 (서울대학교 38동 글로벌공학교육센터)
+                  Global Education Center for Engineers Convention(Building 38),
+                  Seoul National University
                 </p>
               </div>
               <div
@@ -297,7 +297,7 @@ export default function Home() {
                   Accommodation
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Hoam Faculty House (호암교수회관)
+                  Hoam Faculty House
                 </p>
               </div>
 

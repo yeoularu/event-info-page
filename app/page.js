@@ -112,23 +112,21 @@ export default function Home() {
                   The 32nd Integrated Operating Scenarios TG Meeting
                 </h1>
                 <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-                  The Integrated Operation Scenario (IOS) Topical Group of the
-                  International Tokamak Physics Activity (ITPA) is meeting at
-                  Seoul National University.
+                  The 32nd ITPA Integrated Operation Scenario (IOS) Topical
+                  Group is held at Seoul National University.
                 </h2>
               </div>
               <div className="grid gap-4">
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg font-semibold">Date</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <h3 className="text-xl font-semibold">Date</h3>
+                  <p className="text-base text-gray-500 dark:text-gray-400">
                     May 7th - May 10th, 2024
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg font-semibold">Location</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    College of Engineering, Seoul National University, Seoul,
-                    Republic of Korea
+                  <h3 className="text-xl font-semibold">Location</h3>
+                  <p className="text-base text-gray-500 dark:text-gray-400">
+                    College of Engineering, Seoul National University
                   </p>
                 </div>
               </div>
@@ -232,7 +230,7 @@ export default function Home() {
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Seoul National University Global Engineering Education Center,
-                  Bldg. 38 (서울대학교 38동 글로벌공학교육센터)
+                  Building 38 (서울대학교 38동 글로벌공학교육센터)
                 </p>
               </div>
               <div
@@ -405,39 +403,39 @@ function BusStopIcon(props) {
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />{" "}
+      />
       <path
         d="M6 16.01L6.01 15.9989"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />{" "}
+      />
       <path
         d="M20 22V15V8M20 8H18L18 2H22V8H20Z"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />{" "}
+      />
       <path
         d="M4 20V22H6V20H4Z"
         fill="currentColor"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />{" "}
+      />
       <path
         d="M14 20V22H16V20H14Z"
         fill="currentColor"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />{" "}
+      />
       <path
         d="M16 20H2.6C2.26863 20 2 19.7314 2 19.4V12.6C2 12.2686 2.26863 12 2.6 12H16"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />{" "}
+      />
       <path
         d="M14 8H6M14 2H6C3.79086 2 2 3.79086 2 6V8"
         stroke="currentColor"

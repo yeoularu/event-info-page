@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "32nd ITPA IOS TG",
+  title: "32nd ITPA IOS TG Meeting",
   description:
     "The 32nd International Tokamak Physics Activity(ITPA) Integrated Operation Scenario Topical Group Meeting",
 };
@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <SpeedInsights />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

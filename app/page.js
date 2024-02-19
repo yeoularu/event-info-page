@@ -42,8 +42,10 @@ export default function Home() {
       });
     };
 
+    const apiKey = "AIzaSyDzgwSLnm3DYves43xc9VSo2MNuGyZ3ODU";
+
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMaps`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMaps`;
     script.async = true;
     script.defer = true;
     window.initMaps = initMaps;
@@ -59,16 +61,18 @@ export default function Home() {
       <header className="sticky top-0 z-50 flex min-h-16 w-full items-center bg-white shadow-md dark:bg-gray-800 flex-wrap justify-center">
         <div className="container flex items-center justify-between my-2 md:my-0 px-4 md:px-6 flex-wrap">
           <Link className="flex items-center gap-2" href="#intro">
-            <span className="text-lg font-semibold">32nd ITPA IOS TG</span>
+            <span className="text-lg font-semibold">
+              32nd ITPA IOS TG Meeting
+            </span>
           </Link>
 
           <nav className="w-full flex gap-6 justify-center my-2 md:my-0 md:w-fit">
-            <Link
+            {/* <Link
               href="#about"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="#schedule"
               className="text-sm font-medium hover:underline underline-offset-4"
@@ -107,7 +111,7 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   The 32nd Integrated Operating Scenarios TG Meeting
                 </h1>
-                <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed dark:text-gray-400">
                   The Integrated Operation Scenario (IOS) Topical Group of the
                   International Tokamak Physics Activity (ITPA) is meeting at
                   Seoul National University.
@@ -131,7 +135,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           id="about"
           className="w-full py-24 lg:py-32 flex justify-center"
         >
@@ -150,7 +154,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section
           id="schedule"
           className="w-full py-24 lg:py-32 flex justify-center"

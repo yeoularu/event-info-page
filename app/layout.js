@@ -4,8 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Event Info",
-  description: "Event information & contact details",
+  title: "32nd ITPA IOS TG",
+  description:
+    "The 32nd International Tokamak Physics Activity(ITPA) Integrated Operation Scenario Topical Group Meeting",
 };
 
 export default function RootLayout({ children }) {

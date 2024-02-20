@@ -26,6 +26,8 @@ export default function Home() {
       ];
 
       locations.forEach((location) => {
+        if (!document.getElementById(location.elementId)) return;
+
         const map = new google.maps.Map(
           document.getElementById(location.elementId),
           {

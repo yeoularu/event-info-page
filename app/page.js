@@ -112,8 +112,8 @@ export default function Home() {
                   The 32nd Integrated Operating Scenarios TG Meeting
                 </h1>
                 <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-                  The 32nd ITPA Integrated Operation Scenario Topical Group is
-                  held at Seoul National University.
+                  The 32nd ITPA Integrated Operation Scenario Topical Group
+                  Meeting will be held at Seoul National University
                 </h2>
               </div>
               <div className="grid gap-4">
@@ -229,18 +229,17 @@ export default function Home() {
                   Venue
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Global Education Center for Engineers Convention(Building 38),
-                  Seoul National University
+                  College of Engineering, Seoul National University
                 </p>
               </div>
-              <div
+              {/* <div
                 id="map1"
                 style={{
                   height: "500px",
                   width: "100%",
                   marginBottom: "2rem",
                 }}
-              ></div>
+              ></div> */}
 
               <div className="max-w-4xl mx-auto p-6 bg-white shadow rounded-lg flex flex-col md:flex-row justify-between text-left space-y-4 md:space-y-0 md:space-x-4">
                 <div className="flex flex-col space-y-4 w-full bg-white rounded-lg p-4">

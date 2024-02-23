@@ -346,7 +346,7 @@ export default function Home() {
                   >
                     Here
                   </Link>
-                  , go in and search for 6017.
+                  .
                 </p>
               </details>
             </div>

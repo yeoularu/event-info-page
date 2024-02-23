@@ -20,7 +20,7 @@ export default function Home() {
           lat: 37.46792035367733,
           lng: 126.95894058228868,
           elementId: "map2",
-          title: "HOAM FACULTY HOUSE",
+          title: "HOAM PROFESSOR HALL",
           zoom: 16,
         },
       ];
@@ -59,8 +59,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900">
-      <header className="sticky top-0 z-50 flex min-h-16 w-full items-center bg-white shadow-md dark:bg-gray-800 flex-wrap justify-center">
+    <div className="flex flex-col min-h-screen bg-white ">
+      <header className="sticky top-0 z-50 flex min-h-16 w-full items-center bg-white shadow-md ">
         <div className="container flex items-center justify-between my-2 md:my-0 px-4 md:px-6 flex-wrap">
           <Link className="flex items-center gap-2" href="#intro">
             <span className="text-lg font-semibold">
@@ -113,21 +113,21 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   The 32nd Integrated Operating Scenarios TG Meeting
                 </h1>
-                <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed dark:text-gray-400">
+                <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed ">
                   The 32nd ITPA Integrated Operation Scenario Topical Group
-                  Meeting will be held at Seoul National University
+                  Meeting will be held at Seoul National University.
                 </h2>
               </div>
               <div className="grid gap-4">
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-semibold">Date</h3>
-                  <p className="text-base text-gray-500 dark:text-gray-400">
+                  <p className="text-base text-gray-500 ">
                     May 7th - May 10th, 2024
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-semibold">Location</h3>
-                  <p className="text-base text-gray-500 dark:text-gray-400">
+                  <p className="text-base text-gray-500 ">
                     College of Engineering, Seoul National University
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   About
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Join us for a day of learning, inspiration, and fun.
                 </p>
               </div>
@@ -164,56 +164,64 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                 Schedule
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                To be determined.
+
+              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Check out the full schedule{" "}
+                <Link
+                  href="https://indico.iter.org/event/247/"
+                  className="text-blue-500 hover:underline underline-offset-2"
+                >
+                  Here
+                </Link>
+                .
               </p>
             </div>
             {/* <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 text-center pt-4">
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Opening Ceremony</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   9:00 AM - 10:00 AM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Keynote Speaker</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   10:00 AM - 11:00 AM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Break</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   11:00 AM - 12:00 PM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Workshop 1</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   12:00 PM - 1:00 PM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Lunch</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   1:00 PM - 2:00 PM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Workshop 2</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   2:00 PM - 3:00 PM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Break</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   3:00 PM - 4:00 PM
                 </p>
               </div>
               <div className="flex flex-col space-y-2">
                 <h3 className="text-lg font-semibold">Closing Ceremony</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500 ">
                   4:00 PM - 5:00 PM
                 </p>
               </div>
@@ -230,7 +238,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Venue
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   College of Engineering, Seoul National University
                 </p>
               </div>
@@ -279,9 +287,9 @@ export default function Home() {
                     <BusIcon className="text-gray-500" />
                     <h2 className="text-lg font-semibold">Nearby buses</h2>
                   </div>
-                  <p className="text-gray-700">5511</p>
-                  <p className="text-gray-700">5513</p>
-                  <p className="text-gray-700">5516</p>
+                  <p className="text-gray-700">🟩 5511</p>
+                  <p className="text-gray-700">🟩 5513</p>
+                  <p className="text-gray-700">🟩 5516</p>
                 </div>
               </div>
             </div>
@@ -297,11 +305,16 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Accommodation
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Hoam Faculty House
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Hoam Professor Hall{" "}
+                  <Link
+                    href="https://hoamstay.com/"
+                    className="inline-flex font-medium items-center text-blue-500 hover:underline underline-offset-2"
+                  >
+                    (Link)
+                  </Link>
                 </p>
               </div>
-
               <div
                 id="map2"
                 style={{
@@ -310,12 +323,27 @@ export default function Home() {
                   marginBottom: "2rem",
                 }}
               ></div>
-              <Link
-                href="https://hoamstay.com/"
-                className="inline-flex font-medium items-center text-blue-600 hover:underline"
-              >
-                Go to Accommodation Site
-              </Link>
+              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                To get here from Incheon International Airport, we recommend
+                taking the 6017 Bus.
+              </p>
+
+              <details className="flex flex-col justify-center items-center">
+                <summary className="m-auto max-w-[600px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  6017 Bus Details
+                </summary>
+                <Image src="/route_information.png" width={1200} height={800} />
+                <p className="m-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  More information about the 6017 bus can be found{" "}
+                  <Link
+                    href="https://www.airport.kr/ap/en/tpt/busRouteList.do"
+                    className="text-blue-500 hover:underline underline-offset-2"
+                  >
+                    Here
+                  </Link>{" "}
+                  (go in and search for 6017).
+                </p>
+              </details>
             </div>
           </div>
         </section>
@@ -329,14 +357,14 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Contact
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Join us for a day of learning, inspiration, and fun.
                 </p>
               </div>
               <div className="grid gap-4">
                 <div className="flex flex-col gap-1">
                   <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     asdf@example.com
                   </p>
                   <Link href="mailto:asdf@example.com">
@@ -347,7 +375,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 ">
                     010-1234-5678
                   </p>
                 </div>

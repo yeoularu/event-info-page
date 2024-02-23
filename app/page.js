@@ -345,8 +345,8 @@ export default function Home() {
                     className="text-blue-500 hover:underline underline-offset-2"
                   >
                     Here
-                  </Link>{" "}
-                  (go in and search for 6017).
+                  </Link>
+                  , go in and search for 6017.
                 </p>
               </details>
             </div>

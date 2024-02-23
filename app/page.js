@@ -4,7 +4,8 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import route_information from "@/public/route_information.png";
+import route_information_1 from "@/public/route_information_1.png";
+import route_information_2 from "@/public/route_information_2.png";
 export default function Home() {
   useEffect(() => {
     const initMaps = () => {
@@ -20,7 +21,7 @@ export default function Home() {
           lat: 37.46792035367733,
           lng: 126.95894058228868,
           elementId: "map2",
-          title: "HOAM PROFESSOR HALL",
+          title: "Hoam Faculty House",
           zoom: 16,
         },
       ];
@@ -306,7 +307,7 @@ export default function Home() {
                   Accommodation
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hoam Professor Hall{" "}
+                  Hoam Faculty House{" "}
                   <Link
                     href="https://hoamstay.com/"
                     className="inline-flex font-medium items-center text-blue-500 hover:underline underline-offset-2"
@@ -323,32 +324,43 @@ export default function Home() {
                   marginBottom: "2rem",
                 }}
               ></div>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                To get here from Incheon International Airport, we recommend
-                taking the 6017 Bus.
-              </p>
 
-              <details className="flex flex-col justify-center items-center">
-                <summary className="m-auto max-w-[600px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  6017 Bus Details
-                </summary>
-                <Image
-                  src={route_information}
-                  width={1200}
-                  height={800}
-                  placeholder="blur"
-                />
-                <p className="m-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  More information about the 6017 bus can be found{" "}
-                  <Link
-                    href="https://www.airport.kr/ap/en/tpt/busRouteList.do"
-                    className="text-blue-500 hover:underline underline-offset-2"
-                  >
-                    Here
-                  </Link>
-                  .
-                </p>
-              </details>
+              <p className="m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Directions to Hoam Faculty House from Incheon International
+                Airport
+              </p>
+              <br />
+              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Upon your arrival at Incheon International Airport, please
+                proceed to take bus number 6017. You can find the bus departing
+                from two locations: at the Bus Stop No. 6 on the 1st Floor and
+                at the Bus Stop No. 27 in the Transportation Center Basement 1.
+                For your convenience, the locations of these bus stops are
+                indicated in the image below. Your destination stop will be
+                ‘Hoam Professor Hall’.
+              </p>
+              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                For more information, please visit{" "}
+                <Link
+                  href="https://www.airport.kr/ap/en/tpt/busRouteList.do"
+                  className="font-semibold text-blue-500 hover:underline underline-offset-2"
+                >
+                  here
+                </Link>{" "}
+                and search for bus number 6017.
+              </p>
+              <Image
+                src={route_information_1}
+                width={1200}
+                height={800}
+                placeholder="blur"
+              />
+              <Image
+                src={route_information_2}
+                width={1200}
+                height={800}
+                placeholder="blur"
+              />
             </div>
           </div>
         </section>

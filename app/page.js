@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import route_information from "@/public/route_information.png";
 export default function Home() {
   useEffect(() => {
     const initMaps = () => {
@@ -332,7 +332,12 @@ export default function Home() {
                 <summary className="m-auto max-w-[600px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   6017 Bus Details
                 </summary>
-                <Image src="/route_information.png" width={1200} height={800} />
+                <Image
+                  src={route_information}
+                  width={1200}
+                  height={800}
+                  placeholder="blur"
+                />
                 <p className="m-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   More information about the 6017 bus can be found{" "}
                   <Link

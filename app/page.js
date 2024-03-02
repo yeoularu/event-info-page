@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import route_information_1 from "@/public/route_information_1.png";
 import route_information_2 from "@/public/route_information_2.png";
+
 export default function Home() {
   useEffect(() => {
     const initMaps = () => {
@@ -94,6 +95,12 @@ export default function Home() {
             >
               Accommodation
             </Link>
+            <Link
+              href="#visa"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
+              Visa
+            </Link>
             {/* <Link
               href="#contact"
               className="text-sm font-medium hover:underline underline-offset-4"
@@ -146,7 +153,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   About
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                   Join us for a day of learning, inspiration, and fun.
                 </p>
               </div>
@@ -166,7 +173,7 @@ export default function Home() {
                 Schedule
               </h2>
 
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                 Check out the full schedule{" "}
                 <Link
                   href="https://indico.iter.org/event/247/"
@@ -239,7 +246,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Venue
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                   College of Engineering, Seoul National University
                 </p>
               </div>
@@ -306,7 +313,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Accommodation
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                   Hoam Faculty House{" "}
                   <Link
                     href="https://hoamstay.com/"
@@ -325,12 +332,12 @@ export default function Home() {
                 }}
               ></div>
 
-              <p className="m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                 Directions to Hoam Faculty House from Incheon International
                 Airport
               </p>
               <br />
-              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                 Upon your arrival at Incheon International Airport, please
                 proceed to take bus number 6017. You can find the bus departing
                 from two locations: at the Bus Stop No. 6 on the 1st Floor and
@@ -339,7 +346,7 @@ export default function Home() {
                 indicated in the image below. Your destination stop will be
                 ‘Hoam Professor Hall’.
               </p>
-              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                 For more information, please visit{" "}
                 <Link
                   href="https://www.airport.kr/ap/en/tpt/busRouteList.do"
@@ -364,6 +371,61 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section
+          id="visa"
+          className="w-full py-24 lg:py-32 flex justify-center"
+        >
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-10 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  Visa Application Form
+                </h2>
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                  To apply for a visa, Fill in the documents below and send it
+                  back to ysna@snu.ac.kr.
+                </p>
+              </div>
+              <div className="grid gap-4">
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-semibold">
+                    Visa Application Form
+                  </h3>
+                  <Button
+                    className="inline-flex"
+                    variant="outline"
+                    onClick={() => {
+                      fetch(
+                        "/invitation_letter_for_visa_purpose_request.docx"
+                      ).then((response) => {
+                        response.blob().then((blob) => {
+                          let url = window.URL.createObjectURL(blob);
+                          let a = document.createElement("a");
+                          a.href = url;
+                          a.download =
+                            "invitation_letter_for_visa_purpose_request.docx";
+                          a.click();
+                        });
+                      });
+                    }}
+                  >
+                    File Download
+                  </Button>
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-semibold">Email</h3>
+                  <p className="text-gray-500 ">ysna@snu.ac.kr</p>
+                  <Link href="mailto:ysna@snu.ac.kr">
+                    <Button className="inline-flex" variant="outline">
+                      Send Email
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* <section
           id="contact"
           className="w-full py-24 lg:py-32 flex justify-center"
@@ -374,7 +436,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Contact
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                   Join us for a day of learning, inspiration, and fun.
                 </p>
               </div>

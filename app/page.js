@@ -121,7 +121,7 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   The 32nd Integrated Operating Scenarios TG Meeting
                 </h1>
-                <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed ">
+                <h2 className="max-w-[600px] m-auto text-gray-500 md:text-xl/relaxed">
                   The 32nd ITPA Integrated Operation Scenario Topical Group
                   Meeting will be held at Seoul National University.
                 </h2>
@@ -129,13 +129,13 @@ export default function Home() {
               <div className="grid gap-4">
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-semibold">Date</h3>
-                  <p className="text-base text-gray-500 ">
+                  <p className="text-base text-gray-500 md:text-xl/relaxed">
                     May 7th - May 10th, 2024
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-semibold">Location</h3>
-                  <p className="text-base text-gray-500 ">
+                  <p className="text-base text-gray-500 md:text-xl/relaxed">
                     College of Engineering, Seoul National University
                   </p>
                 </div>
@@ -331,8 +331,35 @@ export default function Home() {
                   marginBottom: "2rem",
                 }}
               ></div>
+              <div>
+                <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                  For whom wants to stay at Hoam Faculty House, please provide
+                  the information below to{" "}
+                  <Link
+                    href="mailto:ysna@snu.ac.kr"
+                    className="inline-flex items-center text-blue-500 hover:underline underline-offset-2"
+                  >
+                    ysna@snu.ac.kr
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href="mailto:bbqin4@snu.ac.kr"
+                    className="inline-flex items-center text-blue-500 hover:underline underline-offset-2"
+                  >
+                    bbqin4@snu.ac.kr
+                  </Link>
+                </p>
+                <div className="w-fit text-left m-auto">
+                  <ul className="list-disc m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                    <li>Check-in and -out date</li>
+                    <li>Number of people to stay</li>
+                    <li>Any preference</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
 
-              <p className="m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
                 Directions to Hoam Faculty House from Incheon International
                 Airport
               </p>
@@ -392,7 +419,7 @@ export default function Home() {
                     Visa Application Form
                   </h3>
                   <Button
-                    className="inline-flex"
+                    className="inline-flex w-fit m-auto"
                     variant="outline"
                     onClick={() => {
                       fetch(

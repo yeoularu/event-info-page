@@ -153,7 +153,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   About
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
                   Join us for a day of learning, inspiration, and fun.
                 </p>
               </div>
@@ -173,7 +173,7 @@ export default function Home() {
                 Schedule
               </h2>
 
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
                 Check out the full schedule{" "}
                 <Link
                   href="https://indico.iter.org/event/247/"
@@ -246,7 +246,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Venue
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
                   College of Engineering, Seoul National University
                 </p>
               </div>
@@ -313,7 +313,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Accommodation
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
                   Hoam Faculty House{" "}
                   <Link
                     href="https://hoamstay.com/"
@@ -332,7 +332,21 @@ export default function Home() {
                 }}
               ></div>
               <div>
-                <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed">
+                  Costs
+                </p>
+                <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
+                  IOS meeting discount: 108900KRW (~80USD) per night
+                </p>
+                <p className="m-auto max-w-[1200px] text-gray-500 md:text-md/relaxed lg:text-md/relaxed xl:text-md/relaxed">
+                  Original price: 121000KRW (~90USD) per night
+                </p>
+              </div>
+
+              <hr className="w-full max-w-[1200px] my-8 border-gray-300" />
+
+              <div>
+                <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
                   For whom wants to stay at Hoam Faculty House, please provide
                   the information below to{" "}
                   <Link
@@ -350,21 +364,20 @@ export default function Home() {
                   </Link>
                 </p>
                 <div className="w-fit text-left m-auto">
-                  <ul className="list-disc m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                  <ul className="list-disc m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
                     <li>Check-in and -out date</li>
                     <li>Number of people to stay</li>
                     <li>Any preference</li>
                   </ul>
                 </div>
               </div>
-              <br />
-
-              <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+              <hr className="w-full max-w-[1200px] my-8 border-gray-300" />
+              <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed">
                 Directions to Hoam Faculty House from Incheon International
                 Airport
               </p>
               <br />
-              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
                 Upon your arrival at Incheon International Airport, please
                 proceed to take bus number 6017. You can find the bus departing
                 from two locations: at the Bus Stop No. 6 on the 1st Floor and
@@ -373,7 +386,7 @@ export default function Home() {
                 indicated in the image below. Your destination stop will be
                 ‘Hoam Professor Hall’.
               </p>
-              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
                 For more information, please visit{" "}
                 <Link
                   href="https://www.airport.kr/ap/en/tpt/busRouteList.do"
@@ -408,7 +421,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Visa Application Form
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
                   To apply for a visa, Fill in the documents below and send it
                   back to ysna@snu.ac.kr.
                 </p>
@@ -463,7 +476,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   Contact
                 </h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed">
                   Join us for a day of learning, inspiration, and fun.
                 </p>
               </div>

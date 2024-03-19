@@ -331,19 +331,6 @@ export default function Home() {
                   marginBottom: "2rem",
                 }}
               ></div>
-              <div>
-                <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed">
-                  Costs
-                </p>
-                <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
-                  IOS meeting discount: 108900KRW (~80USD) per night
-                </p>
-                <p className="m-auto max-w-[1200px] text-gray-500 md:text-md/relaxed lg:text-md/relaxed xl:text-md/relaxed">
-                  Original price: 121000KRW (~90USD) per night
-                </p>
-              </div>
-
-              <hr className="w-full max-w-[1200px] my-8 border-gray-300" />
 
               <div>
                 <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
@@ -371,7 +358,21 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
+
+              <div>
+                <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed">
+                  Costs
+                </p>
+                <p className="m-auto max-w-[1200px] text-gray-500 md:text-xl/relaxed">
+                  IOS meeting discount: 108900KRW (~80USD) per night
+                </p>
+                <p className="m-auto max-w-[1200px] text-gray-500 md:text-md/relaxed lg:text-md/relaxed xl:text-md/relaxed">
+                  Original price: 121000KRW (~90USD) per night
+                </p>
+              </div>
+
               <hr className="w-full max-w-[1200px] my-8 border-gray-300" />
+
               <p className="font-semibold m-auto max-w-[1200px] text-gray-700 md:text-xl/relaxed">
                 Directions to Hoam Faculty House from Incheon International
                 Airport

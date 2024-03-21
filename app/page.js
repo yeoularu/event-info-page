@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import route_information_1 from "@/public/route_information_1.png";
 import route_information_2 from "@/public/route_information_2.png";
+import HoamFacultyCenterAccommodationRates from "@/public/HoamFacultyCenterAccommodationRates.png";
 
 export default function Home() {
   useEffect(() => {
@@ -369,6 +370,16 @@ export default function Home() {
                 <p className="m-auto max-w-[1200px] text-gray-500 md:text-md/relaxed lg:text-md/relaxed xl:text-md/relaxed">
                   Original price: 121000KRW (~90USD) per night
                 </p>
+                <figure className="max-w-[100vw] overflow-x-auto p-4">
+                  <Image
+                    className="block max-w-[800px] lg:max-w-none"
+                    src={HoamFacultyCenterAccommodationRates}
+                    width={1200}
+                    height={800}
+                    sizes="(max-width: 640px) 800px, 1200px"
+                    placeholder="blur"
+                  />
+                </figure>
               </div>
 
               <hr className="w-full max-w-[1200px] my-8 border-gray-300" />
